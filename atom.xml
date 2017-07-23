@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>周志国个人博客</title>
-  
+  <subtitle>学习技术我是认真的</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-07-23T04:10:22.505Z</updated>
+  <updated>2017-07-23T05:02:56.957Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://yoursite.com/2017/07/23/rem/"/>
     <id>http://yoursite.com/2017/07/23/rem/</id>
     <published>2017-07-23T03:17:46.325Z</published>
-    <updated>2017-07-23T04:10:22.505Z</updated>
+    <updated>2017-07-23T05:02:56.957Z</updated>
     
     <content type="html"><![CDATA[<h3 id="媒体查询-rem-适配方案"><a href="#媒体查询-rem-适配方案" class="headerlink" title="媒体查询+rem 适配方案"></a>媒体查询+rem 适配方案</h3><p>rem:基于根元素html元素的字体大小来的</p>
 <figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div></pre></td><td class="code"><pre><div class="line"><span class="comment">/*</span></div><div class="line">1.流式布局适配方式：达到宽度的适配  内容没有自适应改变高度也没有自适应改变</div><div class="line">2.rem适配方式：高度和宽度都自适应 内容可自适应   等比例缩放适配</div><div class="line">*/</div><div class="line"><span class="selector-tag">html</span>&#123;</div><div class="line">    <span class="attribute">font-size</span>: <span class="number">50px</span>;</div><div class="line">&#125;</div><div class="line"><span class="comment">/*1.把页面上所有px的单位变成了rem*/</span></div><div class="line"><span class="comment">/*2.当我在改变rem的基准值 html的字体大小的时候  页上的容器在等比例缩放*/</span></div><div class="line"><span class="comment">/*3.适配</span></div><div class="line">    假设320px的设备 设置的字体大小是  50px</div><div class="line">    那么640px的设备 设置的字体大小是  100px</div><div class="line">*/</div><div class="line"><span class="comment">/*4.使用媒体查询*/</span></div><div class="line">@<span class="keyword">media</span> (min-width: <span class="number">320px</span>) &#123;</div><div class="line">    <span class="selector-tag">html</span>&#123;</div><div class="line">        <span class="attribute">font-size</span>: <span class="number">50px</span>;</div><div class="line">    &#125;</div><div class="line">&#125;</div><div class="line"><span class="comment">/*5.需要适配移动端主流设备  列如：Iphone6 375px */</span></div><div class="line">@<span class="keyword">media</span> (min-width: <span class="number">375px</span>) &#123;</div><div class="line">    <span class="selector-tag">html</span>&#123;</div><div class="line">        <span class="attribute">font-size</span>: <span class="number">58.59375px</span>;</div><div class="line">    &#125;</div><div class="line">&#125;</div><div class="line">@<span class="keyword">media</span> (min-width: <span class="number">640px</span>) &#123;</div><div class="line">    <span class="selector-tag">html</span>&#123;</div><div class="line">        <span class="attribute">font-size</span>: <span class="number">100px</span>;</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
@@ -45,7 +45,7 @@
     <link href="http://yoursite.com/2017/07/19/hello-world/"/>
     <id>http://yoursite.com/2017/07/19/hello-world/</id>
     <published>2017-07-19T15:46:57.242Z</published>
-    <updated>2017-07-23T04:01:17.752Z</updated>
+    <updated>2017-07-23T05:25:25.134Z</updated>
     
     <content type="html"><![CDATA[<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
 <h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
@@ -59,6 +59,8 @@
     
     </summary>
     
+    
+      <category term="hexo" scheme="http://yoursite.com/tags/hexo/"/>
     
   </entry>
   
