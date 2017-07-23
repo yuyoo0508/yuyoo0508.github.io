@@ -77,7 +77,7 @@
 <link href="/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="rem," />
 
 
 
@@ -95,16 +95,21 @@
 
 
 
-<meta name="description" content="学习技术我是认真的">
-<meta property="og:type" content="website">
-<meta property="og:title" content="周志国个人博客">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta name="description" content="媒体查询+rem 适配方案rem:基于根元素html元素的字体大小来的 123456789101112131415161718192021222324252627282930/*1.流式布局适配方式：达到宽度的适配  内容没有自适应改变高度也没有自适应改变2.rem适配方式：高度和宽度都自适应 内容可自适应   等比例缩放适配*/html&amp;#123;    font-size: 50px;&amp;#12">
+<meta name="keywords" content="rem">
+<meta property="og:type" content="article">
+<meta property="og:title" content="rem适配移动终端">
+<meta property="og:url" content="http://yoursite.com/2017/07/23/rem/index.html">
 <meta property="og:site_name" content="周志国个人博客">
-<meta property="og:description" content="学习技术我是认真的">
+<meta property="og:description" content="媒体查询+rem 适配方案rem:基于根元素html元素的字体大小来的 123456789101112131415161718192021222324252627282930/*1.流式布局适配方式：达到宽度的适配  内容没有自适应改变高度也没有自适应改变2.rem适配方式：高度和宽度都自适应 内容可自适应   等比例缩放适配*/html&amp;#123;    font-size: 50px;&amp;#12">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="http://yoursite.com/imgs/20170723113442.jpg">
+<meta property="og:image" content="http://yoursite.com/imgs/20170723113740.jpg">
+<meta property="og:updated_time" content="2017-07-23T04:10:22.505Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="周志国个人博客">
-<meta name="twitter:description" content="学习技术我是认真的">
+<meta name="twitter:title" content="rem适配移动终端">
+<meta name="twitter:description" content="媒体查询+rem 适配方案rem:基于根元素html元素的字体大小来的 123456789101112131415161718192021222324252627282930/*1.流式布局适配方式：达到宽度的适配  内容没有自适应改变高度也没有自适应改变2.rem适配方式：高度和宽度都自适应 内容可自适应   等比例缩放适配*/html&amp;#123;    font-size: 50px;&amp;#12">
+<meta name="twitter:image" content="http://yoursite.com/imgs/20170723113442.jpg">
 
 
 
@@ -132,13 +137,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/"/>
+  <link rel="canonical" href="http://yoursite.com/2017/07/23/rem/"/>
 
 
 
 
 
-  <title>周志国个人博客</title>
+  <title>rem适配移动终端 | 周志国个人博客</title>
   
 
 
@@ -163,9 +168,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-   page-home 
- ">
+  <div class="container sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -248,9 +251,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -276,9 +279,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/07/23/rem/" itemprop="url">rem适配移动终端</a></h1>
+          <h1 class="post-title" itemprop="name headline">rem适配移动终端</h1>
         
 
         <div class="post-meta">
@@ -325,165 +326,78 @@
       
 
       
-        
-          
-            <h3 id="媒体查询-rem-适配方案"><a href="#媒体查询-rem-适配方案" class="headerlink" title="媒体查询+rem 适配方案"></a>媒体查询+rem 适配方案</h3><p>rem:基于根元素html元素的字体大小来的</p>
+        <h3 id="媒体查询-rem-适配方案"><a href="#媒体查询-rem-适配方案" class="headerlink" title="媒体查询+rem 适配方案"></a>媒体查询+rem 适配方案</h3><p>rem:基于根元素html元素的字体大小来的</p>
 <figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div></pre></td><td class="code"><pre><div class="line"><span class="comment">/*</span></div><div class="line">1.流式布局适配方式：达到宽度的适配  内容没有自适应改变高度也没有自适应改变</div><div class="line">2.rem适配方式：高度和宽度都自适应 内容可自适应   等比例缩放适配</div><div class="line">*/</div><div class="line"><span class="selector-tag">html</span>&#123;</div><div class="line">    <span class="attribute">font-size</span>: <span class="number">50px</span>;</div><div class="line">&#125;</div><div class="line"><span class="comment">/*1.把页面上所有px的单位变成了rem*/</span></div><div class="line"><span class="comment">/*2.当我在改变rem的基准值 html的字体大小的时候  页上的容器在等比例缩放*/</span></div><div class="line"><span class="comment">/*3.适配</span></div><div class="line">    假设320px的设备 设置的字体大小是  50px</div><div class="line">    那么640px的设备 设置的字体大小是  100px</div><div class="line">*/</div><div class="line"><span class="comment">/*4.使用媒体查询*/</span></div><div class="line">@<span class="keyword">media</span> (min-width: <span class="number">320px</span>) &#123;</div><div class="line">    <span class="selector-tag">html</span>&#123;</div><div class="line">        <span class="attribute">font-size</span>: <span class="number">50px</span>;</div><div class="line">    &#125;</div><div class="line">&#125;</div><div class="line"><span class="comment">/*5.需要适配移动端主流设备  列如：Iphone6 375px */</span></div><div class="line">@<span class="keyword">media</span> (min-width: <span class="number">375px</span>) &#123;</div><div class="line">    <span class="selector-tag">html</span>&#123;</div><div class="line">        <span class="attribute">font-size</span>: <span class="number">58.59375px</span>;</div><div class="line">    &#125;</div><div class="line">&#125;</div><div class="line">@<span class="keyword">media</span> (min-width: <span class="number">640px</span>) &#123;</div><div class="line">    <span class="selector-tag">html</span>&#123;</div><div class="line">        <span class="attribute">font-size</span>: <span class="number">100px</span>;</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <h3 id="less适配维护"><a href="#less适配维护" class="headerlink" title="less适配维护"></a>less适配维护</h3><h4 id="lessJS-js插件让less能在浏览器直接运行解析-不推荐"><a href="#lessJS-js插件让less能在浏览器直接运行解析-不推荐" class="headerlink" title="lessJS:js插件让less能在浏览器直接运行解析(不推荐)"></a>lessJS:js插件让less能在浏览器直接运行解析(不推荐)</h4><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">"stylesheet"</span> <span class="attr">type</span>=<span class="string">"text/less"</span> <span class="attr">href</span>=<span class="string">"less/test.less"</span>/&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"assets/less/less.min.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line"><span class="comment">&lt;!--</span></div><div class="line">1.和css引入一样 引入less文件</div><div class="line">2.在less中加入一个属性 type="text/less"</div><div class="line">3.在less引入的下面引入less.js插件  解析less的插件</div><div class="line">4.lessjs会把less的内容加载过来</div><div class="line">5.解析成css字符串  然后追加到head当中  在style标签当中</div><div class="line">6.本质在浏览器运行的还是css</div><div class="line">--&gt;</div></pre></td></tr></table></figure>
 <h4 id="使用less进行css同步编译，在文件中直接引入css-推荐"><a href="#使用less进行css同步编译，在文件中直接引入css-推荐" class="headerlink" title="使用less进行css同步编译，在文件中直接引入css(推荐)"></a>使用less进行css同步编译，在文件中直接引入css(推荐)</h4><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">"stylesheet"</span> <span class="attr">href</span>=<span class="string">"css/test.css"</span>&gt;</span></div><div class="line"><span class="comment">&lt;!-- </span></div><div class="line">各种编辑器都有相应的less编译插件,下面是vscode中的插件</div><div class="line">--&gt;</div></pre></td></tr></table></figure>
 <p><img src="/imgs/20170723113442.jpg" alt="avatar"><br><img src="/imgs/20170723113740.jpg" alt="avatar"></p>
 <h3 id="less适配"><a href="#less适配" class="headerlink" title="less适配"></a>less适配</h3><figure class="highlight less"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div></pre></td><td class="code"><pre><div class="line"></div><div class="line"><span class="keyword">@charset</span> <span class="string">"utf-8"</span>;</div><div class="line"></div><div class="line"><span class="comment">//适配主流设备</span></div><div class="line"><span class="comment">// 640px  750px 设计稿</span></div><div class="line"><span class="comment">// 需要对应的基准值</span></div><div class="line"><span class="comment">// 750px设计稿  假设100px</span></div><div class="line"><span class="comment">// 在psd图量取的尺寸px  通过基准值转成rem</span></div><div class="line"></div><div class="line"><span class="comment">//设备的尺寸  320px,360px,375px,384px,400px,414px,424px,480px,540px,640px,720px,750px</span></div><div class="line"><span class="comment">//每一种设备有对应的fontSize大小</span></div><div class="line"></div><div class="line"><span class="comment">// adapter var</span></div><div class="line"><span class="comment">//设计稿宽度</span></div><div class="line"><span class="variable">@psdWidth:</span><span class="number">750</span>;</div><div class="line"><span class="comment">//基准值</span></div><div class="line"><span class="variable">@baseSize:</span><span class="number">100</span>;</div><div class="line"><span class="comment">//需要适配的所有设备</span></div><div class="line"><span class="variable">@deviceWidthList:</span><span class="number">320px</span>,<span class="number">360px</span>,<span class="number">375px</span>,<span class="number">384px</span>,<span class="number">400px</span>,<span class="number">414px</span>,<span class="number">424px</span>,<span class="number">480px</span>,<span class="number">540px</span>,<span class="number">640px</span>,<span class="number">720px</span>,<span class="number">750px</span>;</div><div class="line"><span class="comment">//length(@deviceWidthList) 获取数组的长度</span></div><div class="line"><span class="comment">//extract(@deviceWidthList,1) 获取数组序号为几的值</span></div><div class="line"><span class="comment">// @index  指的是数组的序号  when 满足这个条件  当前序号要小于数组的长度</span></div><div class="line"><span class="selector-class">.adapterFuc</span>(<span class="variable">@index</span>) <span class="keyword">when</span> (<span class="variable">@index</span> &lt;= length(<span class="variable">@deviceWidthList</span>))&#123;</div><div class="line">    <span class="keyword">@media</span> (<span class="attribute">min-width</span>: extract(<span class="variable">@deviceWidthList</span>,<span class="variable">@index</span>)) &#123;</div><div class="line">      <span class="selector-tag">html</span>&#123;</div><div class="line">        <span class="attribute">font-size</span>: extract(<span class="variable">@deviceWidthList</span>,<span class="variable">@index</span>)/<span class="variable">@psdWidth</span>*<span class="variable">@baseSize</span>;</div><div class="line">      &#125;</div><div class="line">    &#125;</div><div class="line">    <span class="selector-class">.adapterFuc</span>(<span class="variable">@index</span>+<span class="number">1</span>);<span class="comment">//递归调用</span></div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="comment">//调用函数</span></div><div class="line"><span class="selector-class">.adapterFuc</span>(<span class="number">1</span>);</div></pre></td></tr></table></figure>
-          
+      
+    </div>
+
+    <div>
+      
         
+
       
     </div>
 
     <div>
       
-    </div>
+        
 
-    <div>
       
     </div>
 
     <div>
+      
+        
+
       
     </div>
 
     <footer class="post-footer">
       
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/07/19/hello-world/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="周志国">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="周志国个人博客">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/07/19/hello-world/" itemprop="url">hexo 启动</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-07-19T23:46:57+08:00">
-                2017-07-19
-              </time>
-            
-
-            
-
-            
-          </span>
-
+        <div class="post-tags">
           
-
+            <a href="/tags/rem/" rel="tag"># rem</a>
           
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
         </div>
-      </header>
-    
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
       
 
       
       
-        <div class="post-eof"></div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/07/19/hello-world/" rel="next" title="hexo 启动">
+                <i class="fa fa-chevron-left"></i> hexo 启动
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
       
     </footer>
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -491,6 +405,10 @@
 
 
           
+  <div class="comments" id="comments">
+    
+  </div>
+
 
         </div>
         
@@ -511,8 +429,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/avatar.gif"
@@ -572,6 +499,22 @@
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#媒体查询-rem-适配方案"><span class="nav-number">1.</span> <span class="nav-text">媒体查询+rem 适配方案</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#less适配维护"><span class="nav-number">2.</span> <span class="nav-text">less适配维护</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#lessJS-js插件让less能在浏览器直接运行解析-不推荐"><span class="nav-number">2.1.</span> <span class="nav-text">lessJS:js插件让less能在浏览器直接运行解析(不推荐)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#使用less进行css同步编译，在文件中直接引入css-推荐"><span class="nav-number">2.2.</span> <span class="nav-text">使用less进行css同步编译，在文件中直接引入css(推荐)</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#less适配"><span class="nav-number">3.</span> <span class="nav-text">less适配</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -692,10 +635,10 @@
 
 
   
-    <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.1"></script>
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.1"></script>
 <script type="text/javascript" src="/js/src/post-details.js?v=5.1.1"></script>
 
-  
+
 
   
 
